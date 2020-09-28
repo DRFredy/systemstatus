@@ -49,6 +49,7 @@ namespace ProcessInfo.Helpers
                     {
                         MachineName = Environment.MachineName,
                         OSInfo = Environment.OSVersion.ToString(),
+                        Architecture = Environment.Is64BitOperatingSystem ? "64bit" : "32bit",
                         Memory = new MemoryInformation
                         {
                             Total = $"{ConvertTo(MemMeasureType.KBYTE, MemMeasureType.GIGABYTE, memMetrics.Total)} GB",

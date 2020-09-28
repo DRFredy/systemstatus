@@ -7,6 +7,7 @@ namespace ProcessInfo.Models
         public ProcessInformation Process { get; set; }
         public string MachineName { get; set; }
         public string OSInfo { get; set; }
+        public string Architecture { get; set; }
     }
 
     public class MemoryInformation
